@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 //this class is used to create entity for room database
 
 @Entity(tableName = "notes_table")
-class NoteEntity(@ColumnInfo(name = "note_Text")var text:String)
+class NoteEntity(@ColumnInfo(name = "note_Text")val text:String)
 {
     @PrimaryKey(autoGenerate = true)var id :Int =0
 
